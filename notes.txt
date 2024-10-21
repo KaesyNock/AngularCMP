@@ -1,0 +1,6 @@
+QUESTION: When do you decide when components should be split?
+ANSWER: SEPARATION OF CONCERNS
+-Every component should only do "one thing"
+*Simplicity and Code Colocation is also an option*
+
+Comes down to preference and team
