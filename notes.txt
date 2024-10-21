@@ -4,3 +4,28 @@ ANSWER: SEPARATION OF CONCERNS
 *Simplicity and Code Colocation is also an option*
 
 Comes down to preference and team
+
+
+Element Selector - elements tell the browser what to display
+defined by putting the element on display ie "button" - best practice is to clearly define i.e.
+selector: "app-button"
+*typically used with a new component built to wrap other elements but doesn't replace one
+*typical default
+
+Attribute Selector - attributes define how they will behave
+*typically used to extend a built in element
+.ts
+selector: 'button[appButton]'
+selector: 'button.button"
+
+
+.html
+<button appButton>
+</button>
+
+Best practice to prefix custom attributes that are meant to be used by Angular with you application prefix
+i.e. app
+
+@Component selector works like a CSS selector
+
+

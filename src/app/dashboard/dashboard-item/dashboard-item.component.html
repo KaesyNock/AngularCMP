@@ -1,0 +1,13 @@
+<div class="dashboard-item">
+  <article>
+    <header>
+      <img [src]="image().src" [alt]="image().alt" />
+      <!-- property binding [] = "", allows value to be dynamically extracted -->
+      <h2>{{ title() }}</h2>
+
+      <!-- curly braces, as always, are javascript string interpolation  -->
+    </header>
+    <ng-content />
+    <!-- This concept of using ng-content as a "placeholder" for the wrapped content is also called "Content Projection" -->
+  </article>
+</div>
