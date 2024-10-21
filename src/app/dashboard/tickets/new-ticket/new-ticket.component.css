@@ -1,15 +1,5 @@
 #new-ticket {
   width: 15rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-  font-weight: bold;
-}
-
-#title, #request {
-  width: 100%;
-  text-transform: capitalize;
 }
 
 button {
@@ -38,8 +28,3 @@ button:hover .icon {
   transform: translateX(4px);
 }
 
-@media (min-width: 768px) {
-  #dashboard {
-    flex-direction: row;
-  }
-}

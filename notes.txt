@@ -28,4 +28,36 @@ i.e. app
 
 @Component selector works like a CSS selector
 
+VIEW ENCAPSULATION
+Enums
+-Typescript Feature
+Enums are "groups of allowed values"
 
+enum ViewEncapsulation
+{
+  Emulated = 0,
+  None = 2,
+  ShadowDom = 3
+}
+
+Internally, the pre-defined allowed values (e.g. "Emulated") map to integers which can be used by Angular as identifiers
+
+
+THE SHADOW DOM
+  A browser feature that allows you to attach hidden DOM structures to DOM elements
+
+  EXAMPLE:
+  The built-in <video> element hides a more complex DOM tree that's used internally
+
+  For CSS styling, the Shadow DOM can be used to scope CSS styles to that hidden tree- instead of applying styles globally to the entire page.
+
+  Angular can emulate this Shadow DOM browser feature for its own components.
+
+
+COMPONENT HOST ELEMENTS
+Every Angular component has a HOST ELEMENT
+
+EXAMPLE:
+A component with a selector of "app-header" targets an <app-header> element which is rendered into the real DOM
+*The elements targeted by your component selectors do NOT act as placeholders and ARE NOT replaced when the page is rendered!
+Instead the selected elements are preserved and simply "enhanced"/taken over by your component logic & markup.

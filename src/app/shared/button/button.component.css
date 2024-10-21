@@ -1,4 +1,4 @@
-button {
+:host {
   display: inline-block;
   padding: 0.65rem 1.35rem;
   border-radius: 0.25rem;
@@ -10,7 +10,7 @@ button {
   border: none;
 }
 
-button:hover {
+:host:hover {
   background-color: #551b98;
 }
 
@@ -20,6 +20,9 @@ button:hover {
   transition: transform 0.2s ease-in-out;
 }
 
-button:hover .icon {
+:host:hover .icon {
   transform: translateX(4px);
 }
+
+/* host feature allows you to directly apply styles to the host element */
+/* The component host element is NOT considered a part of the component template but will be affected by the (scoped)component styles via :host */
