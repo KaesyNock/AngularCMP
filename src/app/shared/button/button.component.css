@@ -26,3 +26,4 @@
 
 /* host feature allows you to directly apply styles to the host element */
 /* The component host element is NOT considered a part of the component template but will be affected by the (scoped)component styles via :host */
+/* targeted by the selector of the component */
