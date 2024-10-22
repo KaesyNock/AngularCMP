@@ -15,3 +15,6 @@ import { Component, input, ViewEncapsulation } from '@angular/core';
 export class ControlComponent {
   label = input.required<string>();
 }
+
+
+// stopping point- control styling and making it global
