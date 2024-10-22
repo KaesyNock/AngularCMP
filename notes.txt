@@ -61,3 +61,30 @@ EXAMPLE:
 A component with a selector of "app-header" targets an <app-header> element which is rendered into the real DOM
 *The elements targeted by your component selectors do NOT act as placeholders and ARE NOT replaced when the page is rendered!
 Instead the selected elements are preserved and simply "enhanced"/taken over by your component logic & markup.
+
+:host allows us to avoid unnecessary wrappers
+
+HostBinding looks at property className and sets control as the value
+   () in hostbinding allows you to set the property enabling you to adjust the name of the property
+   I.E. @HostBinding('class') className = 'control' (class) establishes the property, className allows you to avoid confusion with class property
+  not the preferred method
+
+  private el = inject(ElementRef);
+  By using inject(ElementRef) angular gives you access to the host element of a component
+  ElementRef refers to any Element on the page, obvs
+  ElementRef allows programmatic access to component
+
+
+  HTML NOTES
+
+  ANGULAR CLASS BINDING
+  <div [class.status]="currentStatus === 'offline'">
+  allows you to check status conditionally/ set class value dynamically
+  [class] tells Angular that it's a class
+
+
+BASIC NOTES TO REMEMBER
+In object-oriented programming, a "class" is a blueprint that defines the structure and behavior of an object.
+A "property" is a specific attribute or characteristic within that class.
+Essentially a named piece of data that an object of that class can hold; a class can have multiple properties,
+each representing a different attribute of the object.
